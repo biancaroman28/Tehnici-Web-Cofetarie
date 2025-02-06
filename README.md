@@ -27,12 +27,12 @@ Design-ul site-ului trebuie să fie atractiv și ușor de navigat.
 
 ## **Paginile site-ului**  
 
-### 📌 **Meniu**  
+### **Meniu**  
 Prima pagină de prezentare.  
 **Keywords:**  
 `CakeShop, Cofetărie, Comenzi cofetărie, Comenzi prăjituri, Comenzi Torturi personalizate, Evenimente private cofetărie`  
 
-### 📌 **Produse și oferte**  
+### **Produse și oferte**  
 Această pagină prezintă toate produsele oferite, organizate pe categorii:  
 - Prăjituri  
 - Torturi  
@@ -45,11 +45,11 @@ Aici vor apărea și **prețurile produselor**, ofertele disponibile și prețur
 **Keywords:**  
 `Produse de cofetărie, Produse de patiserie, Torturi personalizate, Torturi de nuntă, Produse de post, Prăjituri`  
 
-### 📌 **Despre noi**  
+### **Despre noi**  
 Informații despre cofetărie, istoria ei și echipa.  
 **Keywords:** aceleași ca pentru `Meniu`.  
 
-### 📌 **Galerie foto**  
+### **Galerie foto**  
 Colecție de imagini cu:  
 - Produsele noastre  
 - Locația și interiorul cofetăriei  
@@ -57,19 +57,19 @@ Colecție de imagini cu:
 
 **Keywords:** aceleași ca pentru `Meniu` și `Produse și oferte`.  
 
-### 📌 **Coșul meu**  
+### **Coșul meu**  
 Clienții vor putea **trimite comanda** și adăuga comentarii pentru specificații suplimentare.  
 
 **Keywords:**  
 `Comenzi prăjituri, Comenzi torturi, Comenzi online cofetărie`  
 
-### 📌 **Recenzii**  
+### **Recenzii**  
 Pagină dedicată **recenziilor și feedback-ului** din partea clienților.  
 
 **Keywords:**  
 `Recenzii CakeShop, Păreri CakeShop, Opinii clienți CakeShop`  
 
-### 📌 **Evenimente private**  
+### **Evenimente private**  
 Explică cum cofetăria poate contribui la organizarea evenimentelor speciale (nunți, botezuri, aniversări).  
 
 **Keywords:**  
@@ -77,43 +77,43 @@ Explică cum cofetăria poate contribui la organizarea evenimentelor speciale (n
 
 ---
 
-## 🔍 **Analiză site-uri similare**  
+## **Analiză site-uri similare**  
 
 ### [Cofetăria Saray](https://www.cofetariasaray.ro/index.php/produse)  
 ✔ **Pro:**  
-✅ Meniu de navigare ușor de utilizat  
-✅ Produsele sunt organizate pe categorii  
+ Meniu de navigare ușor de utilizat  
+ Produsele sunt organizate pe categorii  
 
-❌ **Contra:**  
-❌ Nu poți comanda direct de pe site  
-❌ Pagina „Home” este foarte simplă  
+ **Contra:**  
+ Nu poți comanda direct de pe site  
+ Pagina „Home” este foarte simplă  
 
 ### [Art Dessert](https://artdessert.ro/)  
 ✔ **Pro:**  
-✅ Are o secțiune de oferte  
-✅ Link-uri către Social Media  
-✅ Design atractiv  
+ Are o secțiune de oferte  
+ Link-uri către Social Media  
+ Design atractiv  
 
-❌ **Contra:**  
-❌ Meniul de navigare este foarte încărcat  
-❌ Lipsa culorilor pe site  
+ **Contra:**  
+ Meniul de navigare este foarte încărcat  
+ Lipsa culorilor pe site  
 
 ### [Cofetăria Andrei](https://cofetaria-andrei.ro/brasov/)  
 ✔ **Pro:**  
-✅ Produse sortate pe categorii  
-✅ Poți găsi toate produsele ce conțin un anumit ingredient  
+ Produse sortate pe categorii  
+ Poți găsi toate produsele ce conțin un anumit ingredient  
 
-❌ **Contra:**  
-❌ Design neatractiv  
-❌ Nu poți comanda direct de pe site  
-❌ Pagina principală este prea încărcată  
+ **Contra:**  
+ Design neatractiv  
+ Nu poți comanda direct de pe site  
+ Pagina principală este prea încărcată  
 
 ### [Casa Victoria](https://casa-victoria.ro/)  
 ✔ **Pro:**  
-✅ Are un blog  
-✅ Secțiune de recenzii  
+ Are un blog  
+ Secțiune de recenzii  
 
-❌ **Contra:**  
-❌ Text greu de citit pe imagini din cauza culorii  
-❌ Nu are logo  
+ **Contra:**  
+ Text greu de citit pe imagini din cauza culorii  
+ Nu are logo  
 
