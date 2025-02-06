@@ -1,0 +1,89 @@
+{
+  "cale_galerie": "resurse/imagini/",
+  "imagini": [
+    {
+      "cale_imagine": "13315710_529946170543482_1956443716288415091_n.jpg",
+      "titlu": "Imagine 1",
+      "descriere": "Briose",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "40093166_10212767610606400_5876582843768897536_n.jpg",
+      "titlu": "Imagine 2",
+      "descriere": "Tort ciocolata 2",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "119055949_2838576516421852_6274520485607906654_n.jpg",
+      "titlu": "Imagine 3",
+      "descriere": "Prajituri",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "128437824_3488477997871934_4825184869143394157_n.jpg",
+      "titlu": "Imagine 4",
+      "descriere": "Tort unicorn",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "321005455_551895869830981_5079264372189522358_n.jpg",
+      "titlu": "Imagine 5",
+      "descriere": "Cozonac",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "457634138_1120859409702747_5649444688809311642_n.jpg",
+      "titlu": "Imagine 6",
+      "descriere": "Tort albastru nunta",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "337879105_509359358080123_3914312944074777331_n.jpg",
+      "titlu": "Imagine 7",
+      "descriere": "Tort",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "457695492_1120861683035853_7770525573971063104_n.jpg",
+      "titlu": "Imagine 8",
+      "descriere": "Tort mare",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "457735406_1120861593035862_3155997224318124549_n.jpg",
+      "titlu": "Imagine 9",
+      "descriere": "Tort stich",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "457735750_1120861596369195_3570021839130716549_n.jpg",
+      "titlu": "Imagine 10",
+      "descriere": "Tort 6",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "457739027_1120859406369414_2846371833198800881_n.jpg",
+      "titlu": "Imagine 11",
+      "descriere": "Tort nunta",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "457750502_1120861583035863_3497660208760839290_n.jpg",
+      "titlu": "Imagine 12",
+      "descriere": "Tort 18",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "458161774_1120858209702867_9134662325286338880_n.jpg",
+      "titlu": "Imagine 13",
+      "descriere": "Prajitura in pahar",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "458202917_1120861576369197_4434213297944729405_n.jpg",
+      "titlu": "Imagine 14",
+      "descriere": "Tort Wednesday",
+      "sfert_ora": "1"
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+﻿// Variabile
+$culoare-background-menu: #E83186;
+$culoare-text-menu: #000000;
+$culoare-background-submenu: #EA72AA;
+$culoare-text-submenu: #000000;
+$gradient-color-start: #FFFFFF;
+$gradient-color-end: #E83186;
+
+// Mixins
+@mixin stil-link {
+    color: $culoare-text-menu;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    transition: color 0.3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        right: 0;
+        width: 0;
+        height: 10px;
+        background: linear-gradient(to left, $gradient-color-start, darken($gradient-color-end, 10%));
+        transition: width 0.5s ease;
+    }
+
+    &:hover::before {
+        animation: revealBar 0.9s forwards;
+    }
+}
+
+// Animatii
+@keyframes revealBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+// Stiluri
+nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: $culoare-background-menu;
+
+        li {
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+                background-color: darken($culoare-background-menu, 10%);
+
+                ul {
+                    opacity: 1;
+                    width: 120px;
+                    height: auto;
+                    transform: translate(-50%, 0);
+                }
+            }
+
+            a {
+                @include stil-link;
+                // Stilizare icon-uri
+                i {
+                    margin-right: 8px; // Spațiu între icon și text
+                    font-size: 1em; // Dimensiunea iconului
+                }
+            }
+
+            ul {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, 10px);
+                background-color: $culoare-background-submenu;
+                opacity: 0;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                transition: opacity 0.5s ease, width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+
+                li {
+                    display: block;
+
+                    a {
+                        @include stil-link;
+                        padding: 10px 15px;
+                    }
+
+                    &:hover {
+                        background-color: darken($culoare-background-submenu, 10%);
+                        color: lighten($culoare-text-submenu, 20%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Stiluri pentru ecrane medii
+@media (max-width: 768px) {
+    .desktop {
+        display: none; // Ascunde textul "Acasa" pe ecrane medii
+    }
+
+    .mobile {
+        display: inline-block !important; // Afișează iconul pe ecrane medii
+    }
+}
+
+
+
+// Stiluri pentru ecrane mari
+@media (min-width: 769px) {
+    .desktop {
+        display: inline-block; // Afișează textul "Acasa" pe ecrane mari
+    }
+
+    .mobile {
+        display: none; // Ascunde iconul pe ecrane mari
+    }
+}
+
+// Stiluri pentru meniul hamburger
+.hamburger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+
+    span {
+        display: block;
+        background: $culoare-text-menu;
+        height: 3px;
+        margin: 5px 0;
+        width: 100%;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    &.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    &.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    &.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+// Stiluri pentru meniul hamburger deschis pe ecrane mici
+nav.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: $culoare-background-menu;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    z-index: 1000;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            width: 100%;
+            text-align: left;
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: darken($culoare-background-menu, 10%);
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: none; // Ascunde bara de navigare pe ecrane mici
+    }
+
+    .hamburger {
+        display: block; // Afișează meniul hamburger pe ecrane mici
+    }
+
+    .mobile-nav.active {
+        display: flex; // Afișează meniul navigațional când hamburger-ul este activ
+    }
+}
+
+@media print {
+    /* Bannerul în dreapta-sus al primei pagini */
+    @page:first {
+        margin: 2cm 1cm;
+        size: auto;
+    }
+
+    .grid-container::before {
+        content: "Acesta este un proiect școlar!";
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        border: 2px double black;
+        padding: 10px;
+        background-color: #fff;
+        text-align: center;
+        font-size: 1rem;
+        z-index: 1000;
+    }
+
+    /* Ascunde elementele media și linkul către începutul paginii */
+    img, video, iframe, .back-to-top {
+        display: none !important;
+    }
+
+    /* Display grid container as block */
+    .grid-container {
+        display: block;
+    }
+
+    /* Stiluri pentru link-uri în printare */
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Headings și meniul pe prima pagină */
+    @page:first {
+        margin: 2cm 1cm;
+        size: auto;
+    }
+
+    header, footer {
+        page-break-before: always;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Watermark pe fiecare pagină */
+    body::before {
+        content: "Prenume Nume";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 10%;
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    /* Margini pentru paginile din stânga și dreapta */
+    @page {
+        margin: 2cm 1cm;
+    }
+
+    @page :left {
+        margin-left: 2cm;
+        margin-right: 1cm;
+    }
+
+    @page :right {
+        margin-left: 1cm;
+        margin-right: 2cm;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centrează pe orizontală */
+    align-items: center; /* Centrează pe verticală */
+    height: 100vh; /* Întinde containerul pe toată înălțimea viewport-ului */
+}
+
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px;
+    width: 640px; /* 3*200px + 2*10px gap */
+    height: 830px; /* 4*200px + 3*10px gap */
+}
+
+.galerie div {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.galerie img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.empty {
+    background-color: #f0f0f0; /* sau transparent, dacă preferi */
+} 
